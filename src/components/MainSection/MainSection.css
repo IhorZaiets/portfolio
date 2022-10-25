@@ -1,0 +1,23 @@
+.main_section{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/MainPhoto.jpeg);
+    background-size: cover;
+    background-position: contain;
+}
+.introducing_text{
+    text-align: right;
+    margin-right: 10%;
+
+}
+.introducing_text_paragraph{
+    margin-top: 30%;
+    font-size: 30px;
+}
+.introducing_text_header{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.introducing_name{
+    color: red;
+}

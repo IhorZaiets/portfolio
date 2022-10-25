@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+import Header from './components/header/Header';
+import MainSection from './components/MainSection/MainSection';
 
 const App: React.FC = () => (
-  <div>
-    This will be my portfolio
-  </div>
+  <>
+    <MainSection />
+  </>
 );
 
 export default App;

@@ -1,0 +1,19 @@
+.navigation_item{
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+.navigation_item::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navigation_item:hover::after{
+    width: 100%;
+}
+
