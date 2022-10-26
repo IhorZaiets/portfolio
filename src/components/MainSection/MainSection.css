@@ -8,10 +8,9 @@
 .introducing_text{
     text-align: right;
     margin-right: 10%;
-
+    padding-top: 20%;
 }
 .introducing_text_paragraph{
-    margin-top: 30%;
     font-size: 30px;
 }
 .introducing_text_header{

@@ -1,5 +1,7 @@
 .header{
     padding: 10px 10%;
+    width: 100%;
+    position: absolute;
 }
 .navigation{
     display: flex;
