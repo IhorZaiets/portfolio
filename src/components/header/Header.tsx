@@ -13,7 +13,7 @@ const Header: React.FC = () => (
       <img src={Logo} alt="Logo" className="logo" />
       <ul>
         <NavItem text="Home" href="header" />
-        <NavItem text="About" href="header" />
+        <NavItem text="About" href="about" />
         <NavItem text="Services" href="header" />
         <NavItem text="Portfolio" href="header" />
         <NavItem text="Contact" href="header" />
