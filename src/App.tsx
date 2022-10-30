@@ -5,6 +5,8 @@ import './App.css';
 import AboutSection from './components/AboutSection/AboutSection';
 import Header from './components/header/Header';
 import MainSection from './components/MainSection/MainSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
+import PortfolioSection from './components/PortfolioSection/PortfolioSection';
 
 const App: React.FC = () => (
   <>
@@ -12,6 +14,8 @@ const App: React.FC = () => (
     <main>
       <MainSection />
       <AboutSection />
+      <ServicesSection />
+      <PortfolioSection />
     </main>
   </>
 );

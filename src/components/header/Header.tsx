@@ -14,8 +14,8 @@ const Header: React.FC = () => (
       <ul>
         <NavItem text="Home" href="header" />
         <NavItem text="About" href="about" />
-        <NavItem text="Services" href="header" />
-        <NavItem text="Portfolio" href="header" />
+        <NavItem text="Services" href="services" />
+        <NavItem text="Portfolio" href="portfolio" />
         <NavItem text="Contact" href="header" />
       </ul>
     </nav>

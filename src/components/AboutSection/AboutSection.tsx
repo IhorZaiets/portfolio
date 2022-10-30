@@ -1,4 +1,4 @@
-/* eslint-disable react/button-has-type */
+/* eslint-disable react/button-has-type, global-require */
 import React, { useState } from 'react';
 
 import './AboutSection.css';
@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
     <section className="about_section" id="about">
       <figure className="about_section__figure">
         <img
-          src={require('../../assets/AboutPhoto.jpeg')} // eslint-disable-line global-require
+          src={require('../../assets/AboutPhoto.jpeg')}
           alt="about me"
           className="about_section__img"
         />
