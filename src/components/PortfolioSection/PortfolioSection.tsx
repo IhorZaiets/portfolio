@@ -12,10 +12,10 @@ const PortfolioSection: React.FC = () => (
       {
         MY_PORTFOLIO_DATA.map((item) => (
           <PortfolioItem
+            key={item.id}
             title={item.title}
             description={item.description}
             imgAlt={item.imgAlt}
-            imgUrl={item.imgUrl}
             siteLink={item.siteLink}
           />
         ))

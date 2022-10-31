@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/consistent-type-definitions */
 
 export type TabContentType = {
+  id: string
   label: string
   text: string
 };

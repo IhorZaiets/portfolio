@@ -7,7 +7,6 @@ interface PortfolioItemProps {
   title: string
   description: string
   siteLink: string
-  imgUrl: string
   imgAlt: string
 }
 
@@ -15,13 +14,12 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   title,
   description,
   siteLink,
-  imgUrl,
   imgAlt,
 }) => (
   <li className="list_item">
     <img
       className="list_item__img"
-      src={require(imgUrl)}
+      src={require('../../../assets/work-3.png')}
       alt={imgAlt}
     />
     <article className="list_item__upper_layer">

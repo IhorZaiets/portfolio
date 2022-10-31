@@ -74,7 +74,7 @@ const AboutSection: React.FC = () => {
 
         <ul className="about_section__tab_content">
           {MOCKED_ABOUT_ME_INFO[selectedTab].map((item) => (
-            <li className="about_section__tab_content">
+            <li className="about_section__tab_content" key={item.id}>
               <span className="about_section__tab_label">{item.label}</span>
               <br />
               {item.text}
