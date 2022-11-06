@@ -1,13 +1,17 @@
 import { v4 as uuid } from 'uuid';
 import { MyPortfolioDataType } from './models';
 
+import Work1 from '../../assets/work-1.png';
+import Work2 from '../../assets/work-2.png';
+import Work3 from '../../assets/work-3.png';
+
 export const MY_PORTFOLIO_DATA: MyPortfolioDataType[] = [
   {
     id: uuid(),
     title: 'Shopping',
     description: 'adf vhasfbvahsfbvpahosbfv asufob aou wrfaush',
     siteLink: 'google.com',
-    imgUrl: '../../../assets/work-1.png',
+    imgUrl: Work1,
     imgAlt: 'first work',
   },
   {
@@ -15,7 +19,7 @@ export const MY_PORTFOLIO_DATA: MyPortfolioDataType[] = [
     title: 'QWert',
     description: 'adf vhasfbvahsfbvpahosbfv asufob aou wrfaush',
     siteLink: 'facebook.com',
-    imgUrl: '../../assets/work-2.png',
+    imgUrl: Work2,
     imgAlt: 'second work',
   },
   {
@@ -23,7 +27,7 @@ export const MY_PORTFOLIO_DATA: MyPortfolioDataType[] = [
     title: 'asfvasdas',
     description: 'adf vhasfbvahsfbvpahosbfv asufob aou wrfaush',
     siteLink: 'google.com',
-    imgUrl: '../../../assets/work-3.png',
+    imgUrl: Work3,
     imgAlt: 'third work',
   },
 ];

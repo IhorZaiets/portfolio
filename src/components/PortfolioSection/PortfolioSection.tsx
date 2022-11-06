@@ -16,6 +16,7 @@ const PortfolioSection: React.FC = () => (
             title={item.title}
             description={item.description}
             imgAlt={item.imgAlt}
+            imgUrl={item.imgUrl}
             siteLink={item.siteLink}
           />
         ))

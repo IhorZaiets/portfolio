@@ -5,6 +5,7 @@ import './AboutSection.css';
 
 import { MOCKED_ABOUT_ME_INFO } from './constants';
 import { AboutMeTabs } from './models';
+import Photo from '../../assets/AboutPhoto.jpeg';
 
 const AboutSection: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState(AboutMeTabs.SKILLS);
@@ -17,7 +18,7 @@ const AboutSection: React.FC = () => {
     <section className="about_section" id="about">
       <figure className="about_section__figure">
         <img
-          src={require('../../assets/AboutPhoto.jpeg')}
+          src={Photo}
           alt="about me"
           className="about_section__img"
         />
