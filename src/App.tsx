@@ -7,6 +7,7 @@ import Header from './components/header/Header';
 import MainSection from './components/MainSection/MainSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import PortfolioSection from './components/PortfolioSection/PortfolioSection';
+import ContactSection from './components/ContactSection/ContactSection';
 
 const App: React.FC = () => (
   <>
@@ -16,6 +17,7 @@ const App: React.FC = () => (
       <AboutSection />
       <ServicesSection />
       <PortfolioSection />
+      <ContactSection />
     </main>
   </>
 );
