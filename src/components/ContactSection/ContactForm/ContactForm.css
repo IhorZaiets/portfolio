@@ -1,0 +1,34 @@
+
+.contact_section__header {
+  flex-basis: 60%;
+}
+.form__button {
+  display: inline-block;
+  margin-top: 20px;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 60px;
+  border-radius: 6px;
+  background-color: #ff004f;
+  color: #fff;
+  cursor: pointer;
+}
+.form {
+  width: 100%;
+}
+.form__input,
+.form__textarea {
+  width: 100%;
+  border: 1px solid #262626;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.required {
+  color: red;
+  border: 1px solid red;
+}
