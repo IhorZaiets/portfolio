@@ -16,7 +16,7 @@ const Header: React.FC = () => (
         <NavItem text="About" href="about" />
         <NavItem text="Services" href="services" />
         <NavItem text="Portfolio" href="portfolio" />
-        <NavItem text="Contact" href="header" />
+        <NavItem text="Contact" href="contact" />
       </ul>
     </nav>
   </header>

@@ -8,18 +8,19 @@ import './ContactForm.css';
 import { useFormik } from 'formik';
 
 type ErrorsType = {
+  name?: string | null
+  email?: string | null
+  message?: string | null
+};
+type ValuesType = {
   name: string
   email: string
   message: string
 };
 
 const ContactForm: React.FC = () => {
-  const validate = (values: any): ErrorsType => {
-    const errors = {
-      name: '',
-      email: '',
-      message: '',
-    };
+  const validate = (values: ValuesType): ErrorsType => {
+    const errors: ErrorsType = {};
 
     if (!values.name) {
       errors.name = 'Required';
@@ -44,6 +45,7 @@ const ContactForm: React.FC = () => {
     initialValues,
     validate,
     onSubmit: (values) => {
+      console.log('click');
       console.log(`name: ${values.name}`);
       console.log(`email: ${values.email}`);
       console.log(`message: ${values.message}`);
@@ -51,7 +53,7 @@ const ContactForm: React.FC = () => {
   });
 
   return (
-    <form onSubmit={formRequest.handleSubmit} className="form">
+    <form className="form" onSubmit={formRequest.handleSubmit}>
       <input
         type="text"
         id="name"
@@ -81,13 +83,20 @@ const ContactForm: React.FC = () => {
         name="message"
         placeholder="Your message"
         className={
-          formRequest.errors.message ? 'form__textarea required' : 'form__textarea'
+          formRequest.errors.message
+            ? 'form__textarea required'
+            : 'form__textarea'
         }
         onChange={formRequest.handleChange}
         value={formRequest.values.message}
         rows={6}
       />
-      <button type="submit" className="form__button">Submit</button>
+      <button
+        type="submit"
+        className="form__button"
+      >
+        Submit
+      </button>
     </form>
   );
 };

@@ -6,7 +6,7 @@ import './ContactSection.css';
 import ContactForm from './ContactForm/ContactForm';
 
 const ContactSection: React.FC = () => (
-  <section className="contact_section">
+  <section className="contact_section" id="contact">
     <article className="contact_section__article">
       <h2 className="contact_section__header">Contact me</h2>
       <p className="contact_section__contacts">
@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => (
           </a>
         </li>
       </ul>
-      <a href="../../assets/CV/Ihor_Zaiets.pdf" download className="contact_section__btn">Download CV</a>
+      <a href="https://downgit.github.io/#/home?url=https://github.com/IhorZaiets/portfolio/blob/main/src/assets/CV/Ihor_Zaiets.pdf" className="contact_section__btn">Download CV</a>
     </article>
     <ContactForm />
   </section>
