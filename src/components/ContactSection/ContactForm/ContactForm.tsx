@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/strict-boolean-expressions,
-@typescript-eslint/consistent-type-definitions */
+@typescript-eslint/consistent-type-definitions, @typescript-eslint/restrict-template-expressions */
 
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 import './ContactForm.css';
 
@@ -19,6 +20,8 @@ type ValuesType = {
 };
 
 const ContactForm: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+
   const validate = (values: ValuesType): ErrorsType => {
     const errors: ErrorsType = {};
 
@@ -44,16 +47,29 @@ const ContactForm: React.FC = () => {
   const formRequest = useFormik({
     initialValues,
     validate,
-    onSubmit: (values) => {
-      console.log('click');
-      console.log(`name: ${values.name}`);
-      console.log(`email: ${values.email}`);
-      console.log(`message: ${values.message}`);
+    onSubmit: () => {
+      if (form.current) {
+        emailjs
+          .sendForm(
+            'service_5yy0r9k',
+            'template_mlxvgko',
+            form.current,
+            'ahj1YT-L23I81mj7R',
+          )
+          .then(
+            (result) => {
+              alert(`${result.text}. Your email has been successfully sent`);
+            },
+            (error) => {
+              alert(`Unexpected error: ${error.text}`);
+            },
+          );
+      }
     },
   });
 
   return (
-    <form className="form" onSubmit={formRequest.handleSubmit}>
+    <form className="form" onSubmit={formRequest.handleSubmit} ref={form}>
       <input
         type="text"
         id="name"
@@ -91,10 +107,7 @@ const ContactForm: React.FC = () => {
         value={formRequest.values.message}
         rows={6}
       />
-      <button
-        type="submit"
-        className="form__button"
-      >
+      <button type="submit" className="form__button">
         Submit
       </button>
     </form>
