@@ -12,7 +12,7 @@ export const SERVICES_DATA: ServicesDataType[] = [
   },
   {
     id: uuid(),
-    iconClass: 'fa-regular fa-mobile', //i take icons from fontawesome.com, save it className here and pass it to an <i>
+    iconClass: 'fa-brands fa-app-store', //i take icons from fontawesome.com, save it className here and pass it to an <i>
     title: 'App development',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',

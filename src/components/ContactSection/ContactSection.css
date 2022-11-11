@@ -47,3 +47,13 @@
   background-color: #ff004f;
   color: #fff;
 }
+
+
+@media (max-width: 600px) {
+  .contact_section__article {
+    flex-basis: 100%;
+  }
+  .contact_section {
+    flex-direction: column;
+  }
+}

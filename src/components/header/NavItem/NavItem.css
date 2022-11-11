@@ -18,3 +18,9 @@
     width: 100%;
 }
 
+@media (max-width: 600px) {
+    .navigation_item {
+      display: block;
+      margin: 25px;
+    }
+}

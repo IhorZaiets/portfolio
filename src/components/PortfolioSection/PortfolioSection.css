@@ -26,4 +26,9 @@
 .portfolio_section__btn:hover {
   background-color: #ff004f;
 }
-  
+
+@media (max-width: 600px) {
+  .portfolio_section__header {
+    font-size: 40px;
+  }
+}

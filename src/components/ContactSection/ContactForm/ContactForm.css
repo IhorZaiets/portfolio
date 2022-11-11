@@ -1,4 +1,3 @@
-
 .contact_section__header {
   flex-basis: 60%;
 }
@@ -31,4 +30,14 @@
 .required {
   color: red;
   border: 1px solid red;
+}
+
+
+@media (max-width: 600px) {
+  .form {
+    flex-basis: 100%;
+  }
+  .contact_section__header {
+    font-size: 40px;
+  }
 }

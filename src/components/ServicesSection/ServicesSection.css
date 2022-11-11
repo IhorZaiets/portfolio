@@ -38,4 +38,9 @@
   margin-top: 20px;
   display: inline-block;
 }
-  
+
+@media (max-width: 600px) {
+  .services_section__header {
+    font-size: 40px;
+  }
+}

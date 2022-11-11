@@ -12,3 +12,40 @@
 .logo{
   width: 20px;
 }
+
+
+.navigation .fas {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navigation .fas {
+    display: block;
+    font-size: 25px;
+  }
+  .fas.fa-bars {
+    position: fixed;
+    right: 10%;
+    z-index: 3;
+  }
+  .navigation_list {
+    background-color: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 4;
+    transition: right 0.5s;
+  }
+  .navigation_list .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .visible {
+    right: 0;
+  }
+}

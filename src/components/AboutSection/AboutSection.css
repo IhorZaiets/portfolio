@@ -60,3 +60,22 @@
     color: #b54769;
     font-size: 14px;
 }
+
+
+@media (max-width: 600px) {
+  .about_section__header {
+    font-size: 40px;
+  }
+  .about_section__figure,
+  .about_section__article {
+    flex-basis: 100%;
+  }
+  .about_section__article {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .tab_items {
+    font-size: 16px;
+    margin-right: 10%;
+  }
+}
