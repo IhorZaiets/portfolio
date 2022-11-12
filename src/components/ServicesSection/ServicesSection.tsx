@@ -5,7 +5,7 @@ import './ServicesSection.css';
 import { SERVICES_DATA } from './constants';
 
 const ServicesSection: React.FC = () => (
-  <section id="services" className="services_section">
+  <section id="services" className="services">
     <h2 className="services_section__header">My services</h2>
     <ul className="services_section__list">
       {SERVICES_DATA.map((item) => (
