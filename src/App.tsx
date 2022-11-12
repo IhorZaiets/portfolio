@@ -19,8 +19,8 @@ const App: React.FC = () => (
       <ServicesSection />
       <PortfolioSection />
       <ContactSection />
-      <Footer />
     </main>
+    <Footer />
   </>
 );
 
