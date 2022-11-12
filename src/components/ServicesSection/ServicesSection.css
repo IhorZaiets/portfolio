@@ -1,6 +1,9 @@
 .services {
   padding: 30px 10%;
 }
+#services{
+  padding: 30px 10%;
+}
 .services_section__header {
   font-size: 60px;
   font-weight: 600;
